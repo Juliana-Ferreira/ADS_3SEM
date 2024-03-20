@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        var frase = prompt("Digite uma palavra ou frase:");
+    
+        function inverter (str) {
+            var fraseInvertida = "";
+
+            for(let i=str.length-1; i>=0; i--) {
+                fraseInvertida += str[i];
+            }
+
+            return fraseInvertida;
+        }
+
+        function validaFrase (a) {
+            var retiraEspaco = a.replaceAll(" ", "");
+            var diminiuLetras = retiraEspaco.toLowerCase();
+
+            if(diminiuLetras == inverter(diminiuLetras)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        var result = document.getElementById("result");
+        result.innerHTML = (validaFrase(frase) ? "É um palíndromo." : "Não é um palíndromo.");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        var frase = prompt("Digite uma frase:");
+    
+        function inverter (str) {
+            var fraseInvertida = "";
+
+            for(let i=str.length-1; i>=0; i--) {
+                fraseInvertida += str[i];
+            }
+
+            return fraseInvertida;
+        }
+
+        var result = document.getElementById("result");
+        result.innerHTML = inverter(frase);
+    </script>
+</body>
+</html>

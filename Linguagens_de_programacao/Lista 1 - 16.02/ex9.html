@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        var email = prompt("Digite seu e-mail:");
+    
+        function validarEmail (str) {
+            var emailDiv = str.split('@');
+            
+            if (emailDiv.length == 2) {
+                if(emailDiv[1].indexOf('.') > -1) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            else {
+                return false;
+            }
+        }
+
+        var result = document.getElementById("result");
+        result.innerHTML = (validarEmail(email) ? "E-mail válido." : "E-mail inválido.");
+    </script>
+</body>
+</html>

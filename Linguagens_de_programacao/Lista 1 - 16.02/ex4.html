@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        var nome = prompt("Digite o nome completo:");
+        var email = nome.split(' ');
+        
+        var result = document.getElementById("result");
+        result.innerHTML = email[0] + "." + email[email.length - 1] + "@facens.br";
+    </script>
+</body>
+</html>

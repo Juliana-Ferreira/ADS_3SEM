@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        var a = prompt("Digite o primeiro valor:");
+        var b = prompt("Digite o segundo valor:");
+
+        var result = document.getElementById("result");
+        result.innerHTML = "Soma: " + (parseInt(a) + parseInt(b)) + "<br>"
+        + "Subtração: " + (parseInt(a) - parseInt(b)) + "<br>"
+        + "Divisão: " + (parseInt(a) / parseInt(b)) + "<br>"
+        + "Multiplicação: " + (parseInt(a) * parseInt(b));
+    </script>
+</body>
+</html>
+
