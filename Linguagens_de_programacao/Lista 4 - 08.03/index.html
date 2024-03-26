@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #dadosAluno div, #dadosPai div, #dadosMae div, #dadosCurso div {
+            margin-bottom: 10px;
+        }
+
+        
+    </style>
+    <title>Exercício de Formulário</title>
+</head>
+<body>
+    <header>
+        <h2>Formulário de Inscrição</h2>
+        <p>Seja bem-vindo(a)!</p>
+        <p>Preencha os campos abaixo para se inscrever no curso escolhido.</p>
+        <hr>
+    </header>
+    <form action="https://66020b679d7276a755529903.mockapi.io/apiFormulario/user" method="post">
+        <div id="dadosAluno">
+            <h3>Dados do aluno:</h3>
+            <div>
+                <label for="nomeAluno">Nome:</label>
+                <input type="text" id="nomeAluno" name="aluno_nome" required>
+            </div>
+            <div>
+                <label for="telefoneAluno">Telefone:</label>
+                <input type="tel" id="telefoneAluno" name="aluno_telefone">
+            </div>
+            <div>
+                <label for="celularAluno">Celular:</label>
+                <input type="tel" id="celularAluno" name="aluno_celular" required>
+            </div>
+            <div>
+                <label for="emailAluno">E-mail:</label>
+                <input type="email" id="emailAluno" name="aluno_email" required>
+            </div>
+            <div>
+                <label for="enderecoAluno">Endereço:</label>
+                <input type="text" id="enderecoAluno" name="aluno_endereco">              
+            </div>
+            <div>
+                <label for="numAluno">Nº</label>
+                <input type="number" id="numAluno" name="aluno_numero">
+            </div>
+            <div>
+                <label for="bairroAluno">Bairro:</label>
+                <input type="text" id="bairroAluno" name="aluno_bairro">
+            </div>
+            <div>
+                <label for="cidadeAluno">Cidade:</label>
+                <input type="text" id="cidadeAluno" name="aluno_cidade">
+            </div>
+            <div>
+                <label for="estadoAluno">Estado:</label>
+                <input type="text" id="estadoAluno" name="aluno_estado">
+            </div>
+            <div>
+                <label for="complementoAluno">Complemento:</label>
+                <input type="text" id="complementoAluno" name="aluno_complemento">
+            </div>
+            <div>
+                <label for="cepAluno">CEP:</label>
+                <input type="number" id="cepAluno" name="aluno_cep">
+            </div>
+            <div>
+                <label for="corAluno">Cor:</label>
+                <select name="aluno_cor" id="corAluno" required>
+                    <option value="branca">Branca</option>
+                    <option value="preta">Preta</option>
+                    <option value="parda">Parda</option>
+                    <option value="amarela">Amarela</option>
+                    <option value="indigena">Indígena</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="dadosPai">
+            <h3>Dados do pai:</h3>
+            <div>
+                <label for="nomePai">Nome:</label>
+                <input type="text" id="nomePai" name="pai_nome" required>
+            </div>
+            <div>
+                <label for="cpfPai">CPF:</label>
+                <input type="text" id="cpfPai" name="pai_cpf" required>
+            </div>
+            <div>
+                <label for="nascPai">Data de Nascimento:</label>
+                <input type="date" id="nascPai" name="pai_nasc">
+            </div>
+            <div>
+                <label for="naturalidadePai">Naturalidade:</label>
+                <input type="text" id="naturalidadePai" name="pai_naturalidade">
+            </div>
+            <div>
+                <label for="instrucaoPai">Instrução:</label>
+                <input type="text" id="instrucaoPai" name="pai_instrucao">
+            </div>
+            <div>
+                <label for="profissaoPai">Profissão:</label>
+                <input type="text" id="profissaoPai" name="pai_profissao">
+            </div>
+            <div>
+                <label for="celularPai">Celular:</label>
+                <input type="tel" id="celularPai" name="pai_celular" required>
+            </div>
+            <div>
+                <label for="emailPai">E-mail:</label>
+                <input type="email" id="emailPai" name="pai_email" required>
+            </div>
+            <fieldset>
+                <legend>Responsável financeiro:</legend>
+                <div>
+                    <input type="radio" id="responsavelPai" name="responsavelPai" value="sim">
+                    <label for="responsavelPai">Sim</label>
+                    <input type="radio" id="responsavelPai" name="responsavelPai" value="nao">
+                    <label for="responsavelPai">Não</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="dadosMae">
+            <h3>Dados da mãe:</h3>
+            <div>
+                <label for="nomeMae">Nome:</label>
+                <input type="text" id="nomeMae" name="mae_nome" required>
+            </div>
+            <div>
+                <label for="cpfMae">CPF:</label>
+                <input type="text" id="cpfMae" name="mae_cpf" required>
+            </div>
+            <div>
+                <label for="nascMae">Data de Nascimento:</label>
+                <input type="date" id="nascMae" name="mae_nasc">
+            </div>
+            <div>
+                <label for="naturalidadeMae">Naturalidade:</label>
+                <input type="text" id="naturalidadeMae" name="mae_naturalidade">
+            </div>
+            <div>
+                <label for="instrucaoMae">Instrução:</label>
+                <input type="text" id="instrucaoMae" name="mae_instrucao">
+            </div>
+            <div>
+                <label for="profissaoMae">Profissão:</label>
+                <input type="text" id="profissaoMae" name="mae_profissao">
+            </div>
+            <div>
+                <label for="celularMae">Celular:</label>
+                <input type="tel" id="celularMae" name="mae_celular" required>
+            </div>
+            <div>
+                <label for="emailMae">E-mail:</label>
+                <input type="email" id="emailMae" name="mae_email" required>
+            </div>
+            <fieldset>
+                <legend>Responsável financeiro:</legend>
+                <div>
+                    <input type="radio" id="responsavelMae" name="responsavelMae" value="sim">
+                    <label for="responsavelMae">Sim</label>
+                    <input type="radio" id="responsavelMae" name="responsavelMae" value="nao">
+                    <label for="responsavelMae">Não</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="dadosCurso">
+            <h3>Dados do Curso:</h3>
+            <div>
+                <label for="nomeCurso">Nome do Curso:</label>
+                <input type="text" id="nomeCurso" name="curso_nome" required>
+            </div>
+            <div>
+                <label for="ingressoCurso">Data de ingresso:</label>
+                <input type="date" id="ingressoCurso" name="curso_ingresso" required>
+            </div>
+            <div>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="curso_valor" required>
+            </div>
+            <div>
+                <label for="parcelas">Quantidade de parcelas:</label>
+                <select name="parcelas" id="parcelas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="button">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
