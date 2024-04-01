@@ -1,6 +1,6 @@
 ### Lista 02 – Exercícios Javascript
 
-1.	Crie uma classe Usuario com os atributos nome e idade. Em seguida, crie um array de objetos Usuario e crie um novo array apenas com os nomes dos usuários em letras maiúsculas.Faça um programa que mostre os números impares em um intervalo de 0 a 100.
+1.	Crie uma classe Usuario com os atributos nome e idade. Em seguida, crie um array de objetos Usuario e crie um novo array apenas com os nomes dos usuários em letras maiúsculas.
 2.	Continuando com a classe Usuario, filtre os usuários com idade superior a 18 anos.
 3.	Utilizando a classe Usuario, encontre o primeiro usuário com idade entre 25 e 30 anos.
 4.	Crie um array de números e filtre apenas os números pares. Em seguida, mapeie esses números para o dobro de seus valores.
