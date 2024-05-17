@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    color: tomato;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 800px;
+    height: 900px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: antiquewhite;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column wrap;
+    align-self: baseline;
+    width: 500px;
+}
+
+input {
+    width: 100%;
+}
+
+input:focus {
+    border: 2px solid #555;
+  }
+
+#button {
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color:lightblue;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color:rgb(133, 165, 175);
+}

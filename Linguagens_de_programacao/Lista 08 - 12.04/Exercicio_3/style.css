@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color:lightgray;
+    border-radius: 10%;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+#button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: cadetblue;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: rgb(74, 123, 124);
+}
