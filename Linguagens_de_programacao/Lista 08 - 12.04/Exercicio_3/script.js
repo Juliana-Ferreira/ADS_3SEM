@@ -1,16 +1,6 @@
-let lista = document.getElementById('lista');
-let button = document.getElementById('button');
-let itemTarefa = document.getElementById('itemTarefa')
+let contador = document.getElementById("contador");
+let cont = 1;
 
-button.addEventListener('click', function() {
-
-    if(itemTarefa.value != ''){
-    let itemLista = document.createElement("li");
-    itemLista.innerText = itemTarefa.value;
-    itemLista.classList.add('itemLista');
-
-    lista.appendChild(itemLista);
-
-    itemTarefa.value ="";
-    }
-});
+button.addEventListener("click", () => {
+    contador.innerText = cont++;
+  });
