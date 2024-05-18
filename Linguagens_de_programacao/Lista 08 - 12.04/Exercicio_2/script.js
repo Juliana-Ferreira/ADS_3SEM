@@ -1,8 +1,9 @@
-let itemTarefa = document.getElementById("itemTarefa");
+let lista = document.getElementById('lista');
 
-button.addEventListener("click", () => {
+button.addEventListener('click', function () {
+    let itemTarefa = document.getElementById('itemTarefa');
+    let tarefa = itemTarefa.value;
     let novaTarefa = document.createElement('li');
-    novaTarefa.innerHTML = itemTarefa.value;
-    document.getElementsByClassName('lista').appendChild(novaTarefa);
-  });
-
+    novaTarefa.innerText = tarefa;
+    lista.appendChild(novaTarefa);
+})
