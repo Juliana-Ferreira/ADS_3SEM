@@ -5,8 +5,8 @@ function gerarCorAleatoria() {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
-function trocarCor() {
-    const divCard = document.getElementsByClassName('card');
+button.addEventListener('click', function () {
+    const divCard = document.getElementById('card');
     const novaCor = gerarCorAleatoria();
     divCard.style.backgroundColor = novaCor;
-}
+})
