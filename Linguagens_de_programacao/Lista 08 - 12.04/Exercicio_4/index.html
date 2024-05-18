@@ -7,7 +7,28 @@
     <title>Exercício 4 - Manipulação DOM</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="formulario">
+            <div>
+                <label for="num1">Digite um número:</label> <br>
+                <input type="text" id="num1">
+            </div>
+            <div>
+                <label for="num2">Digite outro número:</label> <br>
+                <input type="text" id="num2">
+            </div>
+        </div>
+        <div id="funcao">
+            <button type="button" class="botao" id="somar">Somar</button>
+            <button type="button" class="botao" id="subtrair">Subtrair</button>
+            <button type="button" class="botao" id="dividir">Dividir</button>
+            <button type="button" class="botao" id="multiplicar">Multiplicar</button>
+        </div>
+        <div id="resultado">
+            <h3>Resultado da operação:</h3>
+            <p id="resultadoOperacao"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
