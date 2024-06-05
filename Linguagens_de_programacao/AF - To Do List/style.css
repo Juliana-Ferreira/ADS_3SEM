@@ -1,0 +1,50 @@
+/* Juliana Cristina Camargo Ferreira - RA 172008 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("source/background.gif");
+}
+
+.container {
+    background-color: peachpuff;
+    width: 500px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 120px auto 0;
+}
+
+.task {
+    border: none;
+    border-radius: 5px;
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 16px;
+    padding: 0 15px;
+    float: right;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(84, 125, 201);
+}
+
+.icon {
+    height: 25px;
+    cursor: pointer;
+}
