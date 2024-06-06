@@ -17,9 +17,10 @@ body {
     border-radius: 10px;
     padding: 25px;
     margin: 120px auto 0;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
-.task {
+.new-task {
     border: none;
     border-radius: 5px;
     width: 320px;
@@ -44,7 +45,24 @@ body {
     background-color: rgb(84, 125, 201);
 }
 
+.list {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    padding: 0 10px 0;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .icon {
     height: 25px;
     cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 0.7;
 }
